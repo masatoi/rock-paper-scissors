@@ -1,0 +1,15 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ [[reagent "1.3.0"]
+  [re-frame "1.4.3"]]
+
+ :dev-http {8080 "public"}
+
+ :builds
+ {:frontend {:target :browser
+             :modules {:main {:init-fn rock-paper-scissors.core/init}}
+             :compiler-options {:optimizations :advanced}
+             }}}

@@ -6,3 +6,10 @@ out
 .lein-repl-history
 /.lein-failures
 /.nrepl-port
+
+node_modules
+.shadow-cljs
+public/js
+
+*~
+.#*
